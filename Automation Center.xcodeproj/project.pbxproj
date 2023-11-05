@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		89FE21E82AF778D500D7B2B7 /* Automation_CenterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FE21E72AF778D500D7B2B7 /* Automation_CenterApp.swift */; };
 		89FE21EA2AF778D500D7B2B7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FE21E92AF778D500D7B2B7 /* ContentView.swift */; };
-		89FE21EC2AF778D500D7B2B7 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FE21EB2AF778D500D7B2B7 /* Item.swift */; };
+		89FE21EC2AF778D500D7B2B7 /* TestMethodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FE21EB2AF778D500D7B2B7 /* TestMethodModel.swift */; };
 		89FE21EE2AF778D600D7B2B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89FE21ED2AF778D600D7B2B7 /* Assets.xcassets */; };
 		89FE21F12AF778D600D7B2B7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89FE21F02AF778D600D7B2B7 /* Preview Assets.xcassets */; };
 		89FE21FB2AF778D600D7B2B7 /* Automation_CenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FE21FA2AF778D600D7B2B7 /* Automation_CenterTests.swift */; };
@@ -38,7 +38,7 @@
 		89FE21E42AF778D500D7B2B7 /* Automation Center.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Automation Center.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		89FE21E72AF778D500D7B2B7 /* Automation_CenterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Automation_CenterApp.swift; sourceTree = "<group>"; };
 		89FE21E92AF778D500D7B2B7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		89FE21EB2AF778D500D7B2B7 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		89FE21EB2AF778D500D7B2B7 /* TestMethodModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMethodModel.swift; sourceTree = "<group>"; };
 		89FE21ED2AF778D600D7B2B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89FE21F02AF778D600D7B2B7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		89FE21F62AF778D600D7B2B7 /* Automation CenterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Automation CenterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,7 +98,7 @@
 			children = (
 				89FE21E72AF778D500D7B2B7 /* Automation_CenterApp.swift */,
 				89FE21E92AF778D500D7B2B7 /* ContentView.swift */,
-				89FE21EB2AF778D500D7B2B7 /* Item.swift */,
+				89FE21EB2AF778D500D7B2B7 /* TestMethodModel.swift */,
 				89FE21ED2AF778D600D7B2B7 /* Assets.xcassets */,
 				89FE21EF2AF778D600D7B2B7 /* Preview Content */,
 			);
@@ -261,7 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				89FE21EA2AF778D500D7B2B7 /* ContentView.swift in Sources */,
-				89FE21EC2AF778D500D7B2B7 /* Item.swift in Sources */,
+				89FE21EC2AF778D500D7B2B7 /* TestMethodModel.swift in Sources */,
 				89FE21E82AF778D500D7B2B7 /* Automation_CenterApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

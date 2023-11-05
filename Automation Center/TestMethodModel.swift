@@ -9,10 +9,12 @@ import Foundation
 import SwiftData
 
 @Model
-final class Item {
-    var timestamp: Date
+final class TestMethod {
+    var id: Int
+    var name: String
     
-    init(timestamp: Date) {
-        self.timestamp = timestamp
+    init(id: Int, name: String) {
+        self.id = id
+        self.name = name
     }
 }
