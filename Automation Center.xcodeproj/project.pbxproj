@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8936FD322AFD5AA000C4DC02 /* TestDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8936FD312AFD5AA000C4DC02 /* TestDetailViewModel.swift */; };
+		8936FD352AFF7B6600C4DC02 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 8936FD342AFF7B6600C4DC02 /* Alamofire */; };
 		89FE21E82AF778D500D7B2B7 /* Automation_CenterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FE21E72AF778D500D7B2B7 /* Automation_CenterApp.swift */; };
 		89FE21EA2AF778D500D7B2B7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FE21E92AF778D500D7B2B7 /* ContentView.swift */; };
 		89FE21EC2AF778D500D7B2B7 /* TestMethodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FE21EB2AF778D500D7B2B7 /* TestMethodModel.swift */; };
@@ -15,6 +17,9 @@
 		89FE21FB2AF778D600D7B2B7 /* Automation_CenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FE21FA2AF778D600D7B2B7 /* Automation_CenterTests.swift */; };
 		89FE22052AF778D600D7B2B7 /* Automation_CenterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FE22042AF778D600D7B2B7 /* Automation_CenterUITests.swift */; };
 		89FE22072AF778D700D7B2B7 /* Automation_CenterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FE22062AF778D700D7B2B7 /* Automation_CenterUITestsLaunchTests.swift */; };
+		89FE22152AF786CF00D7B2B7 /* ServiceUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FE22142AF786CF00D7B2B7 /* ServiceUtil.swift */; };
+		89FE22172AF78ABF00D7B2B7 /* TestMethodViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FE22162AF78ABF00D7B2B7 /* TestMethodViewModel.swift */; };
+		89FE221A2AF79DDD00D7B2B7 /* TestDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FE22192AF79DDD00D7B2B7 /* TestDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8936FD312AFD5AA000C4DC02 /* TestDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDetailViewModel.swift; sourceTree = "<group>"; };
 		89FE21E42AF778D500D7B2B7 /* Automation Center.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Automation Center.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		89FE21E72AF778D500D7B2B7 /* Automation_CenterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Automation_CenterApp.swift; sourceTree = "<group>"; };
 		89FE21E92AF778D500D7B2B7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -46,6 +52,9 @@
 		89FE22002AF778D600D7B2B7 /* Automation CenterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Automation CenterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		89FE22042AF778D600D7B2B7 /* Automation_CenterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Automation_CenterUITests.swift; sourceTree = "<group>"; };
 		89FE22062AF778D700D7B2B7 /* Automation_CenterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Automation_CenterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		89FE22142AF786CF00D7B2B7 /* ServiceUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceUtil.swift; sourceTree = "<group>"; };
+		89FE22162AF78ABF00D7B2B7 /* TestMethodViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMethodViewModel.swift; sourceTree = "<group>"; };
+		89FE22192AF79DDD00D7B2B7 /* TestDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8936FD352AFF7B6600C4DC02 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,9 +106,12 @@
 		89FE21E62AF778D500D7B2B7 /* Automation Center */ = {
 			isa = PBXGroup;
 			children = (
+				89FE22182AF79DB900D7B2B7 /* Test Detail View */,
+				89FE22132AF786B200D7B2B7 /* Core */,
 				89FE21E72AF778D500D7B2B7 /* Automation_CenterApp.swift */,
 				89FE21E92AF778D500D7B2B7 /* ContentView.swift */,
 				89FE21EB2AF778D500D7B2B7 /* TestMethodModel.swift */,
+				89FE22162AF78ABF00D7B2B7 /* TestMethodViewModel.swift */,
 				89FE21ED2AF778D600D7B2B7 /* Assets.xcassets */,
 				89FE21EF2AF778D600D7B2B7 /* Preview Content */,
 			);
@@ -130,6 +143,23 @@
 			path = "Automation CenterUITests";
 			sourceTree = "<group>";
 		};
+		89FE22132AF786B200D7B2B7 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				89FE22142AF786CF00D7B2B7 /* ServiceUtil.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		89FE22182AF79DB900D7B2B7 /* Test Detail View */ = {
+			isa = PBXGroup;
+			children = (
+				89FE22192AF79DDD00D7B2B7 /* TestDetailView.swift */,
+				8936FD312AFD5AA000C4DC02 /* TestDetailViewModel.swift */,
+			);
+			path = "Test Detail View";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,6 +176,9 @@
 			dependencies = (
 			);
 			name = "Automation Center";
+			packageProductDependencies = (
+				8936FD342AFF7B6600C4DC02 /* Alamofire */,
+			);
 			productName = "Automation Center";
 			productReference = 89FE21E42AF778D500D7B2B7 /* Automation Center.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +251,9 @@
 				Base,
 			);
 			mainGroup = 89FE21DB2AF778D500D7B2B7;
+			packageReferences = (
+				8936FD332AFF7B6600C4DC02 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 89FE21E52AF778D500D7B2B7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -261,8 +297,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				89FE21EA2AF778D500D7B2B7 /* ContentView.swift in Sources */,
+				89FE221A2AF79DDD00D7B2B7 /* TestDetailView.swift in Sources */,
 				89FE21EC2AF778D500D7B2B7 /* TestMethodModel.swift in Sources */,
+				8936FD322AFD5AA000C4DC02 /* TestDetailViewModel.swift in Sources */,
 				89FE21E82AF778D500D7B2B7 /* Automation_CenterApp.swift in Sources */,
+				89FE22152AF786CF00D7B2B7 /* ServiceUtil.swift in Sources */,
+				89FE22172AF78ABF00D7B2B7 /* TestMethodViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -592,6 +632,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8936FD332AFF7B6600C4DC02 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8936FD342AFF7B6600C4DC02 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8936FD332AFF7B6600C4DC02 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 89FE21DC2AF778D500D7B2B7 /* Project object */;
 }
