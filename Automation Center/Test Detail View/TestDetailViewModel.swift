@@ -6,3 +6,12 @@
 //
 
 import Foundation
+
+class TestDetailViewModel: ObservableObject {
+        
+    func runTest(id: Int) {
+        let runTestEndpoint = "/run/test/\(id)";
+//        ServiceUtil.get(url: runTestEndpoint);
+        
+    }
+}
