@@ -10,14 +10,14 @@ import SwiftData
 
 struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
-    @Query private var testMethods: [TestMethod]
+    @ObservedObject var viewModel: TestMethodViewModel
 
     var body: some View {
         NavigationSplitView {
             List {
-                ForEach(testMethods) { testMethod in
+                ForEach(viewModel.testMethods) { testMethod in
                     NavigationLink {
-                        Text("Test Method: \(testMethod.name)")
+                        TestDetailView(test: testMethod)
                     } label: {
                         Text("Test Method: \(testMethod.name)")
                     }
@@ -37,6 +37,11 @@ struct ContentView: View {
         } detail: {
             Text("Select an item")
         }
+        .onAppear { // fetch all data when page appear
+            Task {
+                await viewModel.fetchAll()
+            }
+        }
     }
 
     private func addItem() {
@@ -47,15 +52,15 @@ struct ContentView: View {
     }
 
     private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            for index in offsets {
-                modelContext.delete(testMethods[index])
-            }
-        }
+//        withAnimation {
+//            for index in offsets {
+////                modelContext.delete(testMethods[index])
+//            }
+//        }
     }
 }
 
 #Preview {
-    ContentView()
+    ContentView(viewModel: TestMethodViewModel())
         .modelContainer(for: TestMethod.self, inMemory: true)
 }
