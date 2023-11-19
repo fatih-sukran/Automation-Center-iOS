@@ -154,9 +154,17 @@ extension ServiceUtil {
         return try await dataRequest.serializingDecodable(type).value
     }
     
+    func asCollaction<T: Decodable>(_ type: T.Type) async throws -> [T] {
+        guard let dataRequest = self.dataRequest else {
+            throw ServiceError.dataRequestNil
+        }
+        
+        return try await dataRequest.serializingDecodable([T].self).value
+    }
+    
     func asString() async throws -> String {
         guard let dataRequest = self.dataRequest else {
-            throw fatalError("dataRequest is nil")
+            throw ServiceError.dataRequestNil
         }
 
         return try await dataRequest.validate().serializingString().value
