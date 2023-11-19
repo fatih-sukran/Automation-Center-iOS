@@ -46,6 +46,10 @@ protocol IService {
     func post(_ url: URL) -> Self
     
     func `as`<T: Decodable>(_ type: T.Type) async throws -> T
+    
+    func asCollaction<T: Decodable>(_ type: T.Type) async throws -> [T]
+    
+    func asString() async throws -> String
 }
 
 /// Concrete implementation of the IService protocol for making HTTP requests using Alamofire.
@@ -144,7 +148,7 @@ extension ServiceUtil {
 extension ServiceUtil {
     func `as`<T: Decodable>(_ type: T.Type) async throws -> T {
         guard let dataRequest = self.dataRequest else {
-            throw fatalError("dataRequest is nil")
+            throw ServiceError.dataRequestNil
         }
 
         return try await dataRequest.serializingDecodable(type).value
@@ -172,4 +176,9 @@ extension ServiceUtil {
                    headers: headers)
         return self
     }
+}
+
+
+enum ServiceError: Error {
+    case dataRequestNil
 }
